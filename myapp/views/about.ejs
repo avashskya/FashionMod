@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>About</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="/images/icons/favicon.png" />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/vendor/bootstrap/css/bootstrap.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/fonts/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/fonts/iconic/css/material-design-iconic-font.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/fonts/linearicons-v1.0.0/icon-font.min.css"
+    />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/vendor/animate/animate.css" />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/vendor/css-hamburgers/hamburgers.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/vendor/animsition/css/animsition.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/vendor/select2/select2.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/vendor/perfect-scrollbar/perfect-scrollbar.css"
+    />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/css/util.css" />
+    <link rel="stylesheet" type="text/css" href="/css/main.css" />
+    <!--===============================================================================================-->
+  </head>
+
+  <body class="animsition">
+    <!-- Header -->
+    <%- include('nav')%>
+    <!-- Cart -->
+    <div class="wrap-header-cart js-panel-cart">
+      <div class="s-full js-hide-cart"></div>
+
+      <div class="header-cart flex-col-l p-l-65 p-r-25">
+        <div class="header-cart-title flex-w flex-sb-m p-b-8">
+          <span class="mtext-103 cl2">
+            Your Cart
+          </span>
+
+          <div
+            class="fs-35 lh-10 cl2 p-lr-5 pointer hov-cl1 trans-04 js-hide-cart"
+          >
+            <i class="zmdi zmdi-close"></i>
+          </div>
+        </div>
+
+        <div class="header-cart-content flex-w js-pscroll">
+          <ul class="header-cart-wrapitem w-full">
+            <li class="header-cart-item flex-w flex-t m-b-12">
+              <div class="header-cart-item-img">
+                <img src="/images/item-cart-01.jpg" alt="IMG" />
+              </div>
+
+              <div class="header-cart-item-txt p-t-8">
+                <a
+                  href="#"
+                  class="header-cart-item-name m-b-18 hov-cl1 trans-04"
+                >
+                  White Shirt Pleat
+                </a>
+
+                <span class="header-cart-item-info">
+                  1 x $19.00
+                </span>
+              </div>
+            </li>
+
+            <li class="header-cart-item flex-w flex-t m-b-12">
+              <div class="header-cart-item-img">
+                <img src="/images/item-cart-02.jpg" alt="IMG" />
+              </div>
+
+              <div class="header-cart-item-txt p-t-8">
+                <a
+                  href="#"
+                  class="header-cart-item-name m-b-18 hov-cl1 trans-04"
+                >
+                  Converse All Star
+                </a>
+
+                <span class="header-cart-item-info">
+                  1 x $39.00
+                </span>
+              </div>
+            </li>
+
+            <li class="header-cart-item flex-w flex-t m-b-12">
+              <div class="header-cart-item-img">
+                <img src="/images/item-cart-03.jpg" alt="IMG" />
+              </div>
+
+              <div class="header-cart-item-txt p-t-8">
+                <a
+                  href="#"
+                  class="header-cart-item-name m-b-18 hov-cl1 trans-04"
+                >
+                  Nixon Porter Leather
+                </a>
+
+                <span class="header-cart-item-info">
+                  1 x $17.00
+                </span>
+              </div>
+            </li>
+          </ul>
+
+          <div class="w-full">
+            <div class="header-cart-total w-full p-tb-40">
+              Total: $75.00
+            </div>
+
+            <div class="header-cart-buttons flex-w w-full">
+              <a
+                href="shoping-cart.html"
+                class="flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-r-8 m-b-10"
+              >
+                View Cart
+              </a>
+
+              <a
+                href="shoping-cart.html"
+                class="flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-b-10"
+              >
+                Check Out
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Title page -->
+    <section
+      class="bg-img1 txt-center p-lr-15 p-tb-92"
+      style="background-image: url('/images/bg-01.jpg');"
+    >
+      <h2 class="ltext-105 cl0 txt-center">
+        About
+      </h2>
+    </section>
+
+    <!-- Content page -->
+    <section class="bg0 p-t-75 p-b-120">
+      <div class="container">
+        <div class="row p-b-148">
+          <div class="col-md-7 col-lg-8">
+            <div class="p-t-7 p-r-85 p-r-15-lg p-r-0-md">
+              <h3 class="mtext-111 cl2 p-b-16">
+                Our Story
+              </h3>
+
+              <p class="stext-113 cl6 p-b-26">
+                FashonMode is a online shopping website that provides Online
+                shopping is the most recent phenomenon in the online space. Men
+                and women of all ages visit the eCommerce websites regularly and
+                buy the necessaries of life. Men from far and near visit online
+                marketplaces to buy and sell goods. The most striking feature in
+                online market is that it is free of large crowd and noise. A
+                person can visit the online shopping site during his free time
+                and place orders to buy an item. Many people make their daily
+                purchases online. Today, there are online shops even of grocers.
+                Rice, pulse, oil, and stationary goods are also bought online.
+                The online grocery stores also sell fruits, vegetables, potato,
+                onions, bread, butter, etc.
+              </p>
+              <p class="stext-113 cl6 p-b-26">
+                Here in this site you will find authentic clothing items from
+                around the country. We provide high quality saree. We have high
+                quality mens and womens clothing items as well.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-11 col-md-5 col-lg-4 m-lr-auto">
+            <div class="how-bor1 ">
+              <div class="hov-img0">
+                <img src="/images/about-01.jpg" alt="IMG" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="order-md-2 col-md-7 col-lg-8 p-b-30">
+            <div class="p-t-7 p-l-85 p-l-15-lg p-l-0-md">
+              <h3 class="mtext-111 cl2 p-b-16">
+                Our Mission
+              </h3>
+
+              <p class="stext-113 cl6 p-b-26">
+                Video provides a powerful way to help you prove your point. When
+                you click Online Video, you can paste in the embed code for the
+                video you want to add. You can also type a keyword to search
+                online for the video that best fits your document. To make your
+                document look professionally produced, Word provides header,
+                footer, cover page, and text box designs that complement each
+                other. For example, you can add a matching cover page, header,
+                and sidebar. Click Insert and then choose the elements you want
+                from the different galleries. Themes and styles also help keep
+                your document coordinated. When you click Design and choose a
+                new Theme, the pictures, charts, and SmartArt graphics change to
+                match your new theme. When you apply styles, your headings
+                change to match the new theme. Save time in Word with new
+                buttons that show up where you need them. To change the way a
+                picture fits in your document, click it and a button for layout
+                options appears next to it. When you work on a table, click
+                where you want to add a row or a column, and then click the plus
+                sign. Reading is easier, too, in the new Reading view. You can
+                collapse parts of the document and focus on the text you want.
+                If you need to stop reading before you reach the end, Word
+                remembers where you left off - even on another device.
+              </p>
+
+              <div class="bor16 p-l-29 p-b-9 m-t-22">
+                <p class="stext-114 cl6 p-r-40 p-b-11">
+                  "Fashion is part of the daily air and it changes all the time,
+                  with all the events. You can even see the approaching of a
+                  revolution in clothes. You can see and feel everything in
+                  clothes."
+                </p>
+
+                <span class="stext-111 cl8">
+                  — Diana Vreeland
+                </span>
+              </div>
+              <div class="bor16 p-l-29 p-b-9 m-t-22">
+                <p class="stext-114 cl6 p-r-40 p-b-11">
+                  "Don't be into trends. Don't make fashion own you, but you
+                  decide what you are, what you want to express by the way you
+                  dress and the way to live."
+                </p>
+
+                <span class="stext-111 cl8">
+                  — Gianni Versace
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="order-md-1 col-11 col-md-5 col-lg-4 m-lr-auto p-b-30">
+            <div class="how-bor2">
+              <div class="hov-img0">
+                <img src="/images/about-02.jpg" alt="IMG" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg3 p-t-75 p-b-32">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-lg-3 p-b-50">
+            <h4 class="stext-301 cl0 p-b-30">
+              Categories
+            </h4>
+
+            <ul>
+              <li class="p-b-10">
+                <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
+                  Women
+                </a>
+              </li>
+
+              <li class="p-b-10">
+                <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
+                  Men
+                </a>
+              </li>
+
+              <li class="p-b-10">
+                <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
+                  Shoes
+                </a>
+              </li>
+
+              <li class="p-b-10">
+                <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
+                  Watches
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-sm-6 col-lg-3 p-b-50">
+            <h4 class="stext-301 cl0 p-b-30">
+              Help
+            </h4>
+
+            <ul>
+              <li class="p-b-10">
+                <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
+                  Track Order
+                </a>
+              </li>
+
+              <li class="p-b-10">
+                <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
+                  Returns
+                </a>
+              </li>
+
+              <li class="p-b-10">
+                <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
+                  Shipping
+                </a>
+              </li>
+
+              <li class="p-b-10">
+                <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
+                  FAQs
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-sm-6 col-lg-3 p-b-50">
+            <h4 class="stext-301 cl0 p-b-30">
+              GET IN TOUCH
+            </h4>
+
+            <p class="stext-107 cl7 size-201">
+              Any questions? Let us know in store at 8th floor, 379 Hudson St,
+              New York, NY 10018 or call us on (+1) 96 716 6879
+            </p>
+
+            <div class="p-t-27">
+              <a href="#" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
+                <i class="fa fa-facebook"></i>
+              </a>
+
+              <a href="#" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
+                <i class="fa fa-instagram"></i>
+              </a>
+
+              <a href="#" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
+                <i class="fa fa-pinterest-p"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-3 p-b-50">
+            <h4 class="stext-301 cl0 p-b-30">
+              Newsletter
+            </h4>
+
+            <form>
+              <div class="wrap-input1 w-full p-b-4">
+                <input
+                  class="input1 bg-none plh1 stext-107 cl7"
+                  type="text"
+                  name="email"
+                  placeholder="email@example.com"
+                />
+                <div class="focus-input1 trans-04"></div>
+              </div>
+
+              <div class="p-t-18">
+                <button
+                  class="flex-c-m stext-101 cl0 size-103 bg1 bor1 hov-btn2 p-lr-15 trans-04"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="p-t-40">
+          <div class="flex-c-m flex-w p-b-18">
+            <a href="#" class="m-all-1">
+              <img src="/images/icons/icon-pay-01.png" alt="ICON-PAY" />
+            </a>
+
+            <a href="#" class="m-all-1">
+              <img src="/images/icons/icon-pay-02.png" alt="ICON-PAY" />
+            </a>
+
+            <a href="#" class="m-all-1">
+              <img src="/images/icons/icon-pay-03.png" alt="ICON-PAY" />
+            </a>
+
+            <a href="#" class="m-all-1">
+              <img src="/images/icons/icon-pay-04.png" alt="ICON-PAY" />
+            </a>
+
+            <a href="#" class="m-all-1">
+              <img src="/images/icons/icon-pay-05.png" alt="ICON-PAY" />
+            </a>
+          </div>
+
+          <p class="stext-107 cl6 txt-center">
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            All rights reserved | This template is made with
+            <i class="fa fa-heart-o" aria-hidden="true"></i> by
+            <a href="https://colorlib.com" target="_blank">Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to top -->
+    <div class="btn-back-to-top" id="myBtn">
+      <span class="symbol-btn-back-to-top">
+        <i class="zmdi zmdi-chevron-up"></i>
+      </span>
+    </div>
+
+    <!--===============================================================================================-->
+    <script src="/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="/vendor/animsition/js/animsition.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="/vendor/bootstrap/js/popper.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="/vendor/select2/select2.min.js"></script>
+    <script>
+      $(".js-select2").each(function() {
+        $(this).select2({
+          minimumResultsForSearch: 20,
+          dropdownParent: $(this).next(".dropDownSelect2"),
+        });
+      });
+    </script>
+    <!--===============================================================================================-->
+    <script src="/vendor/MagnificPopup/jquery.magnific-popup.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="/vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script>
+      $(".js-pscroll").each(function() {
+        $(this).css("position", "relative");
+        $(this).css("overflow", "hidden");
+        var ps = new PerfectScrollbar(this, {
+          wheelSpeed: 1,
+          scrollingThreshold: 1000,
+          wheelPropagation: false,
+        });
+
+        $(window).on("resize", function() {
+          ps.update();
+        });
+      });
+    </script>
+    <!--===============================================================================================-->
+    <script src="/js/main.js"></script>
+  </body>
+</html>

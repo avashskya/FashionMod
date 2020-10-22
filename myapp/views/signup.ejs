@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Signup</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="/images/icons/favicon.png" />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/vendor/bootstrap/css/bootstrap.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/fonts/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/fonts/iconic/css/material-design-iconic-font.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/fonts/linearicons-v1.0.0/icon-font.min.css"
+    />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/vendor/animate/animate.css" />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/vendor/css-hamburgers/hamburgers.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/vendor/animsition/css/animsition.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/vendor/select2/select2.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/vendor/perfect-scrollbar/perfect-scrollbar.css"
+    />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/css/util.css" />
+    <link rel="stylesheet" type="text/css" href="/css/main.css" />
+    <!--===============================================================================================-->
+    <!-- MATERIAL DESIGN ICONIC FONT -->
+    <link
+      rel="stylesheet"
+      href="/signupAndLogin/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css"
+    />
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="/signupAndLogin/css/style.css" />
+  </head>
+
+  <body class="animsition">
+    <!-- Header -->
+    <%-include('nav')%>
+
+    <!-- Cart -->
+    <div class="wrap-header-cart js-panel-cart">
+      <div class="s-full js-hide-cart"></div>
+
+      <div class="header-cart flex-col-l p-l-65 p-r-25">
+        <div class="header-cart-title flex-w flex-sb-m p-b-8">
+          <span class="mtext-103 cl2">
+            Your Cart
+          </span>
+
+          <div
+            class="fs-35 lh-10 cl2 p-lr-5 pointer hov-cl1 trans-04 js-hide-cart"
+          >
+            <i class="zmdi zmdi-close"></i>
+          </div>
+        </div>
+
+        <div class="header-cart-content flex-w js-pscroll">
+          <ul class="header-cart-wrapitem w-full">
+            <li class="header-cart-item flex-w flex-t m-b-12">
+              <div class="header-cart-item-img">
+                <img src="/images/item-cart-01.jpg" alt="IMG" />
+              </div>
+
+              <div class="header-cart-item-txt p-t-8">
+                <a
+                  href="#"
+                  class="header-cart-item-name m-b-18 hov-cl1 trans-04"
+                >
+                  White Shirt Pleat
+                </a>
+
+                <span class="header-cart-item-info">
+                  1 x 250.00
+                </span>
+              </div>
+            </li>
+
+            <li class="header-cart-item flex-w flex-t m-b-12">
+              <div class="header-cart-item-img">
+                <img src="/images/item-cart-02.jpg" alt="IMG" />
+              </div>
+
+              <div class="header-cart-item-txt p-t-8">
+                <a
+                  href="#"
+                  class="header-cart-item-name m-b-18 hov-cl1 trans-04"
+                >
+                  Converse All Star
+                </a>
+
+                <span class="header-cart-item-info">
+                  1 x $39.00
+                </span>
+              </div>
+            </li>
+
+            <li class="header-cart-item flex-w flex-t m-b-12">
+              <div class="header-cart-item-img">
+                <img src="/images/item-cart-03.jpg" alt="IMG" />
+              </div>
+
+              <div class="header-cart-item-txt p-t-8">
+                <a
+                  href="#"
+                  class="header-cart-item-name m-b-18 hov-cl1 trans-04"
+                >
+                  Nixon Porter Leather
+                </a>
+
+                <span class="header-cart-item-info">
+                  1 x $17.00
+                </span>
+              </div>
+            </li>
+          </ul>
+
+          <div class="w-full">
+            <div class="header-cart-total w-full p-tb-40">
+              Total: $75.00
+            </div>
+
+            <div class="header-cart-buttons flex-w w-full">
+              <a
+                href="shoping-cart.html"
+                class="flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-r-8 m-b-10"
+              >
+                View Cart
+              </a>
+
+              <a
+                href="shoping-cart.html"
+                class="flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-b-10"
+              >
+                Check Out
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Title page -->
+    <section
+      class="bg-img1 txt-center p-lr-15 p-tb-92"
+      style="background-image: url('/images/bg-01.jpg');"
+    >
+      <h2 class="ltext-105 cl0 txt-center" id="titles">
+        Login
+      </h2>
+    </section>
+
+    <!-- Content page -->
+    <section class="bg0 p-t-104 p-b-116">
+      <div class="container" id="loginShow">
+        <form action="/login" method="post">
+          <h1>Login Form</h1>
+          <br />
+
+          <%if(locals.msg){%>
+          <div class="alert alert-warning alert-dismissible fade show">
+            <strong>Warning!</strong> <%= msg%>
+            <button type="button" class="close" data-dismiss="alert">
+              &times;
+            </button>
+          </div>
+          <%}%>
+
+          <div class="form-wrapper">
+            <label>UserName</label>
+            <input
+              type="text"
+              name="Lusername"
+              placeholder="Place your User name"
+              class="form-control"
+              id="LusernameId"
+              required
+            />
+
+            <% if(locals.err){%> <% if(locals.err.Susername){%>
+            <span style="color: crimson;"><br /><%=err.Susername.msg%> </span
+            ><%}}else{%>
+            <span id="LUserNameSId" style="color: crimson;"
+              ><br />
+              Should contain atlesst six alphanumeric characters
+            </span>
+            <%}%>
+          </div>
+
+          <div class="form-wrapper">
+            <label>Password</label>
+            <input
+              type="password"
+              name="pass"
+              placeholder="Place your Password"
+              class="form-control"
+              id="LpasswordId"
+              required
+            />
+
+            <% if(locals.err){%><% if(locals.err.pass){%>
+            <span style="color: crimson;"
+              ><br />
+              <%=err.pass.msg%></span
+            >
+            <%}}else{%><span id="LPasswordSId" style="color: crimson;"
+              ><br />Should contain atlesst six alphanumeric characters
+            </span>
+            <%}%>
+          </div>
+          <button
+            type="submit"
+            class="flex-c-m stext-101 cl0 size-121 bg3 bor1 hov-btn3 p-lr-15 trans-04 pointer"
+          >
+            Login
+          </button>
+          <br />
+          <span>
+            Dont have account?
+            <button style="color:rgb(130, 0, 0);" id="clickShowsignup">
+              Click Me
+            </button>
+          </span>
+        </form>
+        <br />
+      </div>
+      <!--===============================================================================================-->
+      <div class="container" id="hideSignup">
+        <form action="/signup" method="post">
+          <h1>Registration Form</h1>
+          <br />
+
+          <%if(locals.msg){%> <%if(msg=="Error"){%>
+          <div class="alert alert-warning alert-dismissible fade show">
+            <strong>Warning!</strong> The UserName is already user Please Try
+            Again
+            <button type="button" class="close" data-dismiss="alert">
+              &times;
+            </button>
+          </div>
+
+          <%}%> <%}%>
+
+          <div class="form-wrapper">
+            <label>Name</label>
+            <input
+              type="text"
+              name="Sname"
+              placeholder="Place your Name "
+              class="form-control"
+              id="NameId"
+              required
+            />
+
+            <% if(locals.err){%> <% if(locals.err.Sname){%>
+            <span style="color: crimson;">
+              <br />
+              <%=err.Sname.msg%>
+            </span>
+            <%}}else{%>
+            <span id="NameSId" style="color: crimson;">
+              <br />The user name should contain at least three characters</span
+            >
+            <%}%>
+          </div>
+
+          <div class="form-wrapper">
+            <label>Email</label>
+            <input
+              type="email"
+              name="Semail"
+              placeholder="Place your email "
+              class="form-control"
+              id="EmailId"
+              required
+            />
+          </div>
+          <div class="form-wrapper">
+            <label>Address</label>
+            <input
+              type="text"
+              name="Saddress"
+              placeholder="Place your Address "
+              class="form-control"
+              id="AddressId"
+              required
+            />
+
+            <% if(locals.err){%> <% if(locals.err.Saddress){%>
+            <span style="color: crimson;"><br /><%=err.Saddress.msg%></span>
+            <%}}else{%>
+            <span id="AddressSID" style="color: crimson;"
+              ><br />
+              There should be full address with "-" of ","</span
+            >
+            <%}%>
+          </div>
+          <div class="form-wrapper">
+            <label>UserName</label>
+            <input
+              type="text"
+              name="Susername"
+              placeholder="Place your User name"
+              class="form-control"
+              id="usernameId"
+              required
+            />
+
+            <% if(locals.err){%> <% if(locals.err.Susername){%>
+            <span style="color: crimson;"><br /><%=err.Susername.msg%> </span
+            ><%}}else{%>
+            <span id="UserNameSId" style="color: crimson;"
+              ><br />
+              Should contain atlesst six alphanumeric characters
+            </span>
+            <%}%>
+          </div>
+          <div class="form-wrapper">
+            <label>Phone number</label>
+            <input
+              type="text"
+              name="Sphoneno"
+              placeholder="Place your Mobile no"
+              class="form-control"
+              id="PhoneId"
+              required
+            />
+
+            <% if(locals.err){%> <% if(locals.err.Sphoneno){%>
+            <span style="color: crimson;"><br /><%=err.Sphoneno.msg%></span>
+            <%}}else{%><span id="PhoneSId" style="color: crimson;"
+              ><br />Should be a vlid phone no</span
+            ><%}%>
+          </div>
+          <div class="form-wrapper">
+            <label>Password</label>
+            <input
+              type="password"
+              name="pass"
+              placeholder="Place your Password"
+              class="form-control"
+              id="passwordId"
+              required
+            />
+
+            <% if(locals.err){%><% if(locals.err.pass){%>
+            <span style="color: crimson;"
+              ><br />
+              <%=err.pass.msg%></span
+            >
+            <%}}else{%><span id="PasswordSId" style="color: crimson;"
+              ><br />Should contain atlesst six alphanumeric characters
+            </span>
+            <%}%>
+          </div>
+          <div class="form-wrapper">
+            <label>Confirm Password</label>
+            <input
+              type="password"
+              name="conpass"
+              placeholder="Re-Enter your Password"
+              class="form-control"
+              id="ConPassId"
+              required
+            />
+            <% if(locals.err){%> <% if(locals.err.conpass){%><span
+              style="color: crimson;"
+              ><br /><%=err.conpass.msg%></span
+            >
+            <%}}else{%><span id="ConPassSId" style="color: crimson;"
+              ><br />Should be equal to password<%}%></span
+            >
+          </div>
+          <button
+            type="submit"
+            class="flex-c-m stext-101 cl0 size-121 bg3 bor1 hov-btn3 p-lr-15 trans-04 pointer"
+          >
+            Register Now
+          </button>
+          <br />
+          <span>
+            Already Registered?
+            <button style="color:rgb(130, 0, 0);" id="clickShowlogin">
+              Click Me
+            </button>
+          </span>
+        </form>
+      </div>
+    </section>
+
+    <!-- Map -->
+    <!-- <div class="map">
+    <div class="size-303" data-scrollwhell="0" data-draggable="1" data-zoom="11">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d580.8599065514998!2d85.3031618219083!3d27.72156562772273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb18ef583e3d7f%3A0x8a8fe9005a16c8fa!2sLumanti%20Marg%2C%20Kathmandu%2044600!5e0!3m2!1sen!2snp!4v1577200718676!5m2!1sen!2snp" ></iframe>
+    </div>
+  </div> -->
+
+    <!-- Footer -->
+    <footer class="bg3 p-t-75 p-b-32">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-lg-3 p-b-50">
+            <h4 class="stext-301 cl0 p-b-30">
+              Categories
+            </h4>
+
+            <ul>
+              <li class="p-b-10">
+                <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
+                  Women
+                </a>
+              </li>
+
+              <li class="p-b-10">
+                <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
+                  Men
+                </a>
+              </li>
+
+              <li class="p-b-10">
+                <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
+                  Shoes
+                </a>
+              </li>
+
+              <li class="p-b-10">
+                <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
+                  Watches
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-sm-6 col-lg-3 p-b-50">
+            <h4 class="stext-301 cl0 p-b-30">
+              Help
+            </h4>
+
+            <ul>
+              <li class="p-b-10">
+                <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
+                  Track Order
+                </a>
+              </li>
+
+              <li class="p-b-10">
+                <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
+                  Returns
+                </a>
+              </li>
+
+              <li class="p-b-10">
+                <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
+                  Shipping
+                </a>
+              </li>
+
+              <li class="p-b-10">
+                <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
+                  FAQs
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-sm-6 col-lg-3 p-b-50">
+            <h4 class="stext-301 cl0 p-b-30">
+              GET IN TOUCH
+            </h4>
+
+            <p class="stext-107 cl7 size-201">
+              Any questions? Let us know in store at 8th floor, 379 Hudson St,
+              New York, NY 10018 or call us on (+1) 96 716 6879
+            </p>
+
+            <div class="p-t-27">
+              <a href="#" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
+                <i class="fa fa-facebook"></i>
+              </a>
+
+              <a href="#" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
+                <i class="fa fa-instagram"></i>
+              </a>
+
+              <a href="#" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
+                <i class="fa fa-pinterest-p"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-3 p-b-50">
+            <h4 class="stext-301 cl0 p-b-30">
+              Newsletter
+            </h4>
+
+            <form>
+              <div class="wrap-input1 w-full p-b-4">
+                <input
+                  class="input1 bg-none plh1 stext-107 cl7"
+                  type="text"
+                  name="email"
+                  placeholder="email@example.com"
+                />
+                <div class="focus-input1 trans-04"></div>
+              </div>
+
+              <div class="p-t-18">
+                <button
+                  class="flex-c-m stext-101 cl0 size-103 bg1 bor1 hov-btn2 p-lr-15 trans-04"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="p-t-40">
+          <div class="flex-c-m flex-w p-b-18">
+            <a href="#" class="m-all-1">
+              <img src="/images/icons/icon-pay-01.png" alt="ICON-PAY" />
+            </a>
+
+            <a href="#" class="m-all-1">
+              <img src="/images/icons/icon-pay-02.png" alt="ICON-PAY" />
+            </a>
+
+            <a href="#" class="m-all-1">
+              <img src="/images/icons/icon-pay-03.png" alt="ICON-PAY" />
+            </a>
+
+            <a href="#" class="m-all-1">
+              <img src="/images/icons/icon-pay-04.png" alt="ICON-PAY" />
+            </a>
+
+            <a href="#" class="m-all-1">
+              <img src="/images/icons/icon-pay-05.png" alt="ICON-PAY" />
+            </a>
+          </div>
+
+          <p class="stext-107 cl6 txt-center">
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            All rights reserved | This template is made with
+            <i class="fa fa-heart-o" aria-hidden="true"></i> by
+            <a href="https://colorlib.com" target="_blank">Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to top -->
+    <div class="btn-back-to-top" id="myBtn">
+      <span class="symbol-btn-back-to-top">
+        <i class="zmdi zmdi-chevron-up"></i>
+      </span>
+    </div>
+
+    <!--===============================================================================================-->
+    <script src="/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="/vendor/animsition/js/animsition.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="/vendor/bootstrap/js/popper.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="/vendor/select2/select2.min.js"></script>
+    <script>
+      $(".js-select2").each(function() {
+        $(this).select2({
+          minimumResultsForSearch: 20,
+          dropdownParent: $(this).next(".dropDownSelect2")
+        });
+      });
+    </script>
+    <!--===============================================================================================-->
+    <script src="/vendor/MagnificPopup/jquery.magnific-popup.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="/vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script>
+      $(".js-pscroll").each(function() {
+        $(this).css("position", "relative");
+        $(this).css("overflow", "hidden");
+        var ps = new PerfectScrollbar(this, {
+          wheelSpeed: 1,
+          scrollingThreshold: 1000,
+          wheelPropagation: false
+        });
+
+        $(window).on("resize", function() {
+          ps.update();
+        });
+      });
+
+      // Login
+      $(document).ready(() => {
+        hideerror();
+        $("#hideSignup").hide();
+        $("#loginShow").show();
+      });
+
+      $("#clickShowsignup").click(() => {
+        $("#hideSignup").show("blur");
+        $("#loginShow").hide("blur");
+        document.getElementById("titles").innerHTML = "Registration";
+      });
+      $("#clickShowlogin").click(() => {
+        $("#hideSignup").hide("blur");
+        $("#loginShow").show("blur");
+        document.getElementById("titles").innerHTML = "Login";
+      });
+
+      $("#LusernameId").focusout(() => {
+        let value = $("#LusernameId").val();
+        const run = /(?!^[0-9]*$)(?!^[a-zA-Z]*$)^([a-zA-Z0-9]{6,16})$/;
+        hideerror();
+        if (!value.match(run)) {
+          $("#LusernameId").focus();
+          $("#LUserNameSId").show("slow");
+        }
+      });
+      $("#LpasswordId").focusout(() => {
+        let value = $("#LpasswordId").val();
+        const run = /(?!^[0-9]*$)(?!^[a-zA-Z]*$)^([a-zA-Z0-9]{6,16})$/;
+        hideerror();
+        if (!value.match(run)) {
+          $("#LpasswordId").focus();
+          $("#LPasswordSId").show("slow");
+        }
+      });
+
+      // Signup
+      const hideerror = () => {
+        $("#NameSId").hide();
+        $("#AddressSID").hide();
+        $("#PhoneSId").hide();
+        $("#UserNameSId").hide();
+        $("#PasswordSId").hide();
+        $("#ConPassSId").hide();
+        //login hide
+        $("#LUserNameSId").hide();
+        $("#LPasswordSId").hide();
+      };
+
+      $("#NameId").focusout(() => {
+        let value = $("#NameId").val();
+        const run = /^[a-z A-Z]{3,20}$/;
+        hideerror();
+        if (!value.match(run)) {
+          $("#NameId").focus();
+          $("#NameSId").show("slow");
+        }
+      });
+
+      $("#AddressId").focusout(() => {
+        let value = $("#AddressId").val();
+        const run = /^[#.0-9a-zA-Z\s,-]{10,30}$/;
+        hideerror();
+        if (!value.match(run)) {
+          $("#AddressId").focus();
+          $("#AddressSID").show("slow");
+        }
+      });
+
+      $("#PhoneId").focusout(() => {
+        let value = $("#PhoneId").val();
+        const run = /^[0-9]{10,10}$/;
+        hideerror();
+        if (!value.match(run)) {
+          $("#PhoneId").focus();
+          $("#PhoneSId").show("slow");
+        }
+      });
+
+      $("#usernameId").focusout(() => {
+        let value = $("#usernameId").val();
+        const run = /(?!^[0-9]*$)(?!^[a-zA-Z]*$)^([a-zA-Z0-9]{6,16})$/;
+        hideerror();
+        if (!value.match(run)) {
+          $("#usernameId").focus();
+          $("#UserNameSId").show("slow");
+        }
+      });
+      $("#passwordId").focusout(() => {
+        let value = $("#passwordId").val();
+        const run = /(?!^[0-9]*$)(?!^[a-zA-Z]*$)^([a-zA-Z0-9]{6,16})$/;
+        hideerror();
+        if (!value.match(run)) {
+          $("#passwordId").focus();
+          $("#PasswordSId").show("slow");
+        }
+      });
+      $("#ConPassId").focusout(() => {
+        let value = $("#ConPassId").val();
+        hideerror();
+        if (value !== $("#passwordId").val()) {
+          $("#ConPassSId").show("slow");
+        }
+      });
+    </script>
+    <!--===============================================================================================-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKFWBqlKAGCeS1rMVoaNlwyayu0e0YRes"></script>
+    <script src="/js/map-custom.js"></script>
+    <!--===============================================================================================-->
+    <script src="/js/main.js"></script>
+  </body>
+</html>
